@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="utf-8">
+   <meta name="description" content="another web page">
+   <meta name="keywords" content="buttons">
+   <meta name="author" content="devin-jhu">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>another web page </title>
+  </head>
+  <body>
+    <button onclick="txtchange()">change text</button>
+    <p id="paragraph">text</p><br>
+    <button onclick="backgroundColor()">color change</button>
+    <p id="appear"></p>
+    <button onclick="txtappear()">text appear</button>
+    <button onclick="document.getElementById('myImage').src='./images/ocean.jpg'">before</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='./images/ocean-plastic.jpg'">after</button>
+    <script>
+      function txtchange() {
+      document.getElementById("paragraph").innerHTML = "deferent text";
+      }
+      function backgroundColor() {
+      document.getElementsByTagName("BODY")[0].style.backgroundColor = "blue";
+      }
+      function txtappear() {
+      document.getElementById("appear").innerHTML = "poof from out of the thin air";
+      }
+
+    </script>
+  </body>
+</html>
